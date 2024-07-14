@@ -1,14 +1,2 @@
-<mat-drawer-container class="example-container" [hasBackdrop]="true">
-  <mat-drawer #drawer [mode]="'over'">
-    <button (click)="drawer.toggle()" mat-icon-button>
-      <span class="material-symbols-outlined">close</span>
-    </button>
-
-    <div>I'm a drawer</div>
-  </mat-drawer>
-  <mat-drawer-content>
-    <button (click)="drawer.toggle()" mat-icon-button>
-      <span class="material-symbols-outlined">menu</span>
-    </button>
-  </mat-drawer-content>
-</mat-drawer-container>
+<router-outlet />
+<app-loading-indicator [detectRouteTransitions]="true" />

@@ -3,7 +3,11 @@ import { Routes } from '@angular/router';
 export const routes: Routes = [
   {
     path: '',
-    loadComponent: () => import('./layout/layout.component').then((m) => m.LayoutComponent),
+    loadChildren: () => import('./layout/layout.module').then((m) => m.LayoutModule),
+  },
+  {
+    path: 'details',
+    loadChildren: () => import('./modules/details/details-routing.module').then((m) => m.DetailsRoutingModule),
   },
   {
     path: 'errors',

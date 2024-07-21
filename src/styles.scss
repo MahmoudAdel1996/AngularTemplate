@@ -1,5 +1,8 @@
 @import "../public/theme/custom";
-@import "../public/fonts/dubai/font.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 html,
 body {
@@ -8,5 +11,4 @@ body {
 
 body {
   margin: 0;
-  font-family: Dubai, 'Helvetica Neue', sans-serif;
 }

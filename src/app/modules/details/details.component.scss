@@ -1,0 +1,11 @@
+mat-toolbar {
+  color: var(--sys-on-background);
+}
+.back-btn {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  color: var(--sys-on-background);
+}

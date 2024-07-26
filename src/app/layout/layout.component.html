@@ -3,7 +3,7 @@
                [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
                [mode]="(isHandset$ | async) ? 'over' : 'side'"
                [opened]="(isHandset$ | async) === false">
-<!--    <mat-toolbar>Menu</mat-toolbar>-->
+    <!--    <mat-toolbar>Menu</mat-toolbar>-->
     <mat-nav-list>
       <a mat-list-item routerLink="/">Link 1</a>
       <a mat-list-item routerLink="/">Link 2</a>
@@ -26,6 +26,6 @@
         <img alt="logo" ngSrc="/images/Logo.svg" width="34" height="34">
       </div>
     </mat-toolbar>
-    <router-outlet/>
+    <router-outlet />
   </mat-sidenav-content>
 </mat-sidenav-container>

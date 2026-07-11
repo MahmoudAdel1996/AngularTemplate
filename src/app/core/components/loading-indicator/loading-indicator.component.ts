@@ -1,4 +1,11 @@
-import { Component, ContentChild, Input, OnInit, TemplateRef } from '@angular/core';
+import {
+  Component,
+  ContentChild,
+  Input,
+  OnInit,
+  TemplateRef,
+  ChangeDetectionStrategy,
+} from '@angular/core';
 import { RouteConfigLoadEnd, RouteConfigLoadStart, Router } from '@angular/router';
 import { Observable, tap } from 'rxjs';
 import { LoadingService } from '../../services/loading.service';
@@ -9,6 +16,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
   selector: 'app-loading-indicator',
   imports: [MatProgressSpinnerModule, AsyncPipe, NgTemplateOutlet],
   templateUrl: './loading-indicator.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './loading-indicator.component.scss',
 })
 export class LoadingIndicatorComponent implements OnInit {

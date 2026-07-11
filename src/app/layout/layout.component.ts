@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, ChangeDetectionStrategy } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { AsyncPipe, NgOptimizedImage } from '@angular/common';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -11,19 +11,20 @@ import { map, shareReplay } from 'rxjs/operators';
 import { RouterModule } from '@angular/router';
 
 @Component({
-    selector: 'app-layout',
-    templateUrl: './layout.component.html',
-    styleUrl: './layout.component.scss',
-    imports: [
-        MatToolbarModule,
-        MatButtonModule,
-        MatSidenavModule,
-        MatListModule,
-        MatIconModule,
-        RouterModule,
-        AsyncPipe,
-        NgOptimizedImage,
-    ]
+  selector: 'app-layout',
+  templateUrl: './layout.component.html',
+  styleUrl: './layout.component.scss',
+  changeDetection: ChangeDetectionStrategy.Eager,
+  imports: [
+    MatToolbarModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatListModule,
+    MatIconModule,
+    RouterModule,
+    AsyncPipe,
+    NgOptimizedImage,
+  ],
 })
 export class LayoutComponent {
   private breakpointObserver = inject(BreakpointObserver);

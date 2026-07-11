@@ -11,20 +11,19 @@ import { map, shareReplay } from 'rxjs/operators';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-layout',
-  templateUrl: './layout.component.html',
-  styleUrl: './layout.component.scss',
-  standalone: true,
-  imports: [
-    MatToolbarModule,
-    MatButtonModule,
-    MatSidenavModule,
-    MatListModule,
-    MatIconModule,
-    RouterModule,
-    AsyncPipe,
-    NgOptimizedImage,
-  ],
+    selector: 'app-layout',
+    templateUrl: './layout.component.html',
+    styleUrl: './layout.component.scss',
+    imports: [
+        MatToolbarModule,
+        MatButtonModule,
+        MatSidenavModule,
+        MatListModule,
+        MatIconModule,
+        RouterModule,
+        AsyncPipe,
+        NgOptimizedImage,
+    ]
 })
 export class LayoutComponent {
   private breakpointObserver = inject(BreakpointObserver);

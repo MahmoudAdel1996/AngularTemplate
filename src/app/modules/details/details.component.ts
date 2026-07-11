@@ -6,10 +6,9 @@ import { RouterLink } from '@angular/router';
 import { MatCard } from '@angular/material/card';
 
 @Component({
-  selector: 'app-details',
-  standalone: true,
-  imports: [MatToolbar, MatIcon, MatIconButton, RouterLink, MatCard],
-  templateUrl: './details.component.html',
-  styleUrl: './details.component.scss',
+    selector: 'app-details',
+    imports: [MatToolbar, MatIcon, MatIconButton, RouterLink, MatCard],
+    templateUrl: './details.component.html',
+    styleUrl: './details.component.scss'
 })
 export class DetailsComponent {}

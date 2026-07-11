@@ -6,11 +6,10 @@ import { AsyncPipe, NgIf, NgTemplateOutlet } from '@angular/common';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 @Component({
-  selector: 'app-loading-indicator',
-  standalone: true,
-  imports: [MatProgressSpinnerModule, AsyncPipe, NgIf, NgTemplateOutlet],
-  templateUrl: './loading-indicator.component.html',
-  styleUrl: './loading-indicator.component.scss',
+    selector: 'app-loading-indicator',
+    imports: [MatProgressSpinnerModule, AsyncPipe, NgIf, NgTemplateOutlet],
+    templateUrl: './loading-indicator.component.html',
+    styleUrl: './loading-indicator.component.scss'
 })
 export class LoadingIndicatorComponent implements OnInit {
   loading$: Observable<boolean>;

@@ -45,3 +45,7 @@ Thumbs.db
 *.crt
 *.key
 *.cnf
+
+# Local dev TLS certificates
+localhost.crt
+localhost.key

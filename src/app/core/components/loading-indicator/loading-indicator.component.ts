@@ -2,14 +2,14 @@ import { Component, ContentChild, Input, OnInit, TemplateRef } from '@angular/co
 import { RouteConfigLoadEnd, RouteConfigLoadStart, Router } from '@angular/router';
 import { Observable, tap } from 'rxjs';
 import { LoadingService } from '../../services/loading.service';
-import { AsyncPipe, NgIf, NgTemplateOutlet } from '@angular/common';
+import { AsyncPipe, NgTemplateOutlet } from '@angular/common';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 @Component({
-    selector: 'app-loading-indicator',
-    imports: [MatProgressSpinnerModule, AsyncPipe, NgIf, NgTemplateOutlet],
-    templateUrl: './loading-indicator.component.html',
-    styleUrl: './loading-indicator.component.scss'
+  selector: 'app-loading-indicator',
+  imports: [MatProgressSpinnerModule, AsyncPipe, NgTemplateOutlet],
+  templateUrl: './loading-indicator.component.html',
+  styleUrl: './loading-indicator.component.scss',
 })
 export class LoadingIndicatorComponent implements OnInit {
   loading$: Observable<boolean>;
